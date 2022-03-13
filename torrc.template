@@ -7,7 +7,7 @@ DataDirectory /var/lib/tor
 SOCKSPort 0
 
 BridgeRelay 1
-Bridge obfs4 70.34.242.31:443 7F026956402CDFF4BCBA8E11EE9C50E3FE0A2B72 cert=hP/KU7JATSfWH3HwS5Er/YLT0J+bRO3+s2fWx2yirrgf37EyrWvm/BQshoNje8WfUm6CBw iat-mode=0
+#Bridge obfs4 70.34.242.31:443 7F026956402CDFF4BCBA8E11EE9C50E3FE0A2B72 cert=hP/KU7JATSfWH3HwS5Er/YLT0J+bRO3+s2fWx2yirrgf37EyrWvm/BQshoNje8WfUm6CBw iat-mode=0
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 UseBridges 1
 #ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
