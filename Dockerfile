@@ -27,6 +27,6 @@ CMD ["tor", "-f", "/tmp/torrc"]
 
 # https://github.com/opencontainers/image-spec/blob/v1.0.1/annotations.md
 ARG REVISION=
-LABEL org.opencontainers.image.title="tor bridge providing obfs4 obfuscation protocol" \
+LABEL org.opencontainers.image.title="tor bridge providing obfs4 obfuscation protocol test" \
     org.opencontainers.image.source="https://github.com/iAHTOH/docker-tor-obfs4-bridge" \
     org.opencontainers.image.revision="$REVISION"
