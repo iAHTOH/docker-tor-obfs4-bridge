@@ -17,6 +17,8 @@ ENV OR_PORT=
 ENV PT_PORT=
 ENV OBFS4_ADR=
 ENV CONTACT_INFO=
+ENV TOR_LOGIN=
+ENV TOR_PASS=
 COPY torrc.template entrypoint.sh /
 RUN chmod -c a+rX /torrc.template /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
