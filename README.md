@@ -5,6 +5,9 @@ Tor bridge running obfs4 obfuscation protocol on Alpine
 Alpine port of https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge
 
 ## usage
+Собираем
+docker build -t iahtoh/tor-obfs4-bridge https://github.com/iAHTOH/docker-tor-obfs4-bridge.git
+
 
 select a random `$OR_PORT` and `$PT_PORT`
 
