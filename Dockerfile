@@ -15,6 +15,7 @@ RUN apk add --no-cache tor=$TOR_PACKAGE_VERSION \
 
 ENV OR_PORT=
 ENV PT_PORT=
+ENV OBFS4_ADR=
 ENV CONTACT_INFO=
 COPY torrc.template entrypoint.sh /
 RUN chmod -c a+rX /torrc.template /entrypoint.sh
