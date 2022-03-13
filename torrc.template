@@ -7,9 +7,9 @@ DataDirectory /var/lib/tor
 SOCKSPort 0
 
 BridgeRelay 1
-ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
-Bridge {OBFS4_ADR}
-UseBridges 1
+#ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+#Bridge {OBFS4_ADR}
+#UseBridges 1
 ExtORPort auto
 ORPort {OR_PORT}
 ServerTransportListenAddr obfs4 0.0.0.0:{PT_PORT}
