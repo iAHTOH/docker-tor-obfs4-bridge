@@ -6,10 +6,8 @@ DataDirectory /var/lib/tor
 # Политика подключений (*разрешено все IP)
 SocksPolicy accept * 
 # Прослушиваемый порт и IP адрес (все) 
-SocksPort 0.0.0.0:51822 
-#Логин и пароль подключения к прокси
-Socks5ProxyUsername myuser
-Socks5ProxyPassword mypass 
+SocksPort 0.0.0.0:{LISTING_PORT}
+
 
 ## Настройка моста
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
