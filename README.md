@@ -10,7 +10,7 @@ Alpine port of https://dip.torproject.org/torproject/anti-censorship/docker-obfs
 docker build -t iahtoh/tor-obfs4-bridge https://github.com/iAHTOH/docker-tor-obfs4-bridge.git
 ```
 
-select a random `$OR_PORT` and `$PT_PORT`
+Можно выбрать свой порт прослушивания LISTING_PORT
 
 (see `/proc/sys/net/ipv4/ip_local_port_range` for range)
 
@@ -20,7 +20,7 @@ ddocker run --name tor_obfs4_bridge
     -e CONTACT_INFO=admin@optional.com \
      iahtoh/tor-obfs4-bridge
 ```
-
+obfs4 мост задается в настройках контейнера.
 add `-v tor_obfs4_bridge_data:/var/lib/tor` to keep server's identity key
 when restarting the container
 
