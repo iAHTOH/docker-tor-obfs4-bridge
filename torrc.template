@@ -4,8 +4,9 @@ Log notice stdout
 #DataDirectory /var/lib/tor
 
 # disable socks proxy
-SOCKSPort 9050
-SOCKSBindAddress 0.0.0.0
+SOCKSPort 0.0.0.0:9050
+#SOCKSBindAddress 0.0.0.0
+SocksPolicy accept *
 #BridgeRelay 1
 
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
