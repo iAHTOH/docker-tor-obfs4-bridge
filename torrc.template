@@ -6,7 +6,7 @@ DataDirectory /var/lib/tor
 # disable socks proxy
 SOCKSPort 9050
 
-BridgeRelay 1
+#BridgeRelay 1
 
 UseBridges 1
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy managed
