@@ -12,5 +12,5 @@ SocksPolicy accept *
 # Прослушиваемый порт и IP адрес (все) 
 SocksPort 0.0.0.0:9050 
 #Логин и пароль подключения к прокси
-Socks5ProxyUsername myuser
-Socks5ProxyPassword mypass 
+#Socks5ProxyUsername myuser
+#Socks5ProxyPassword mypass 
