@@ -13,5 +13,5 @@ ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 Bridge {OBFS4_ADR}
 UseBridges 1
 
-#Для исключения не вызывающих доверия узлов (Например - российских, украинских и белорусских) :
-ExcludeNodes {ru}, {ua}, {by}
+#Для исключения узлов Tor из стран РФ, Беларусь, Украина и Казахстан:
+ExcludeNodes {ru}, {by}, {ua}, {kz}
