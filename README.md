@@ -15,9 +15,9 @@ docker build -t iahtoh/tor-obfs4-bridge https://github.com/iAHTOH/docker-tor-obf
 (see `/proc/sys/net/ipv4/ip_local_port_range` for range)
 
 ```sh
-docker run --name tor_obfs4_bridge     
-        -e LISTING_PORT=9050 -p 9050:9050 \
-        iahtoh/tor-obfs4-bridge
+docker run --name tor_obfs4_bridge \     
+           -e LISTING_PORT=9050 -p 9050:9050 \
+            iahtoh/tor-obfs4-bridge
 ```
 obfs4 мост задается в настройках контейнера.
 add `-v tor_obfs4_bridge_data:/var/lib/tor` to keep server's identity key
