@@ -7,9 +7,7 @@ set -e
 
 set -x
 
-sed -e "s#{LISTING_PORT}#$LISTING_PORT#" \
-    -e "s#{OBFS4_ADR}#$OBFS4_ADR#" \
-    -e "s#{CONTACT_INFO}#$CONTACT_INFO#" \
-    /torrc.template >/tmp/torrc
+sed -e "s#{OBFS4_ADR}#$OBFS4_ADR#" \
+     /torrc.template >/tmp/torrc
 
 exec "$@"
