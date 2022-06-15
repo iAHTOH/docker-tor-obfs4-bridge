@@ -10,7 +10,11 @@ SocksPort 0.0.0.0:{LISTING_PORT}
 
 ## Настройка моста
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
-Bridge {OBFS4_ADR}
+## Будем использовать 4 адреса. 
+Bridge {OBFS4_ADR1}
+Bridge {OBFS4_ADR2}
+Bridge {OBFS4_ADR3}
+Bridge {OBFS4_ADR4}
 UseBridges 1
 
 #Для исключения узлов Tor из стран РФ, Беларусь, Украина и Казахстан:
