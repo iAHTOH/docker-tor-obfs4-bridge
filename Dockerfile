@@ -2,7 +2,7 @@
 FROM alpine:edge
 
 
-RUN apk add --no-cache tor && \
+RUN apk add --no-cache tor123 && \
     apk add --no-cache obfs4proxy --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
       
 
