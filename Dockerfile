@@ -1,13 +1,13 @@
-FROM debian:sid
+#FROM debian:sid
 
-RUN    apt-get update 
-RUN    apt-get install -y tor 
-RUN    apt-get install -y obfs4proxy 
-RUN    apt-get clean
+#RUN    apt-get update 
+#RUN    apt-get install -y tor 
+#RUN    apt-get install -y obfs4proxy 
+#RUN    apt-get clean
     
-#FROM alpine:edge
-#RUN apk add --no-cache tor && \
-#    apk add --no-cache obfs4proxy --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
+FROM alpine:edge
+RUN apk add --no-cache tor && \
+    apk add --no-cache obfs4proxy --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
       
 
 #RUN apk add --no-cache \
