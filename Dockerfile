@@ -2,7 +2,7 @@ FROM debian:sid
 
 RUN    apt-get update 
 RUN    apt-get install -y tor 
-RUN    apt-get install -yobfs4proxy 
+RUN    apt-get install -y obfs4proxy 
 RUN    apt-get clean
     
 #FROM alpine:edge
