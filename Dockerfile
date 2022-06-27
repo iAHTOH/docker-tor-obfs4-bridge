@@ -1,7 +1,8 @@
 FROM debian
 
 RUN apt-get update && \
-    apt-get install -y tor, obfs4proxy && \
+    apt-get install -y tor -t bullseye-backports && \
+    obfs4proxy && \
     apt-get clean
     
 #FROM alpine:edge
