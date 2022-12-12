@@ -8,6 +8,9 @@ SocksPolicy accept *
 # Прослушиваемый порт и IP адрес (все) 
 SocksPort 0.0.0.0:{LISTING_PORT}
 
+Socks5ProxyUsername username
+Socks5ProxyPassword password
+
 ## Настройка моста
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 ## Будем использовать 4 адреса. 
