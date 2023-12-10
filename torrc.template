@@ -6,9 +6,8 @@ DataDirectory /var/lib/tor
 # Политика подключений (*разрешено все IP)
 SocksPolicy accept * 
 # Прослушиваемый порт и IP адрес (все) 
-#SocksPort 0.0.0.0:{LISTING_PORT}
-# disable socks proxy
-SOCKSPort 0
+SocksPort 0.0.0.0:{LISTING_PORT}
+
 
 # not working
 #Socks5ProxyUsername username
@@ -25,7 +24,6 @@ UseBridges 1
 
 ExtORPort auto
 ORPort {OR_PORT}
-ServerTransportListenAddr obfs4 0.0.0.0:{PT_PORT}
 
 #Для исключения узлов Tor из стран РФ, Беларусь, Украина и Казахстан:
 ExcludeNodes {ru}, {by}, {ua}, {kz}
