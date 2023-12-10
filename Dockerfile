@@ -7,7 +7,8 @@
     
 FROM alpine:edge
 RUN apk add --no-cache tor && \
-    apk add --no-cache obfs4proxy --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
+    #apk add --no-cache obfs4proxy --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
+    apk add --no-cache lyrebird --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
       
 
 #RUN apk add --no-cache \
