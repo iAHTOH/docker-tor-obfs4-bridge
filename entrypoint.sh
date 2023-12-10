@@ -7,8 +7,7 @@ set -e
 
 set -x
 
-sed  -e "s#{OR_PORT}#$OR_PORT#" \
-     -e "s#{PT_PORT}#$PT_PORT#" \
+sed  -e "s#{LISTING_PORT}#$LISTING_PORT#" \
      -e "s#{OBFS4_ADR1}#$OBFS4_ADR1#" \
      -e "s#{OBFS4_ADR2}#$OBFS4_ADR2#" \
      -e "s#{OBFS4_ADR3}#$OBFS4_ADR3#" \
