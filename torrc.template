@@ -13,7 +13,7 @@ SocksPort 0.0.0.0:{LISTING_PORT}
 #Socks5ProxyPassword password
 
 ## Настройка моста
-ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+ClientTransportPlugin obfs4 exec /usr/bin/lyrebird
 ## Будем использовать 4 адреса. 
 Bridge {OBFS4_ADR1}
 Bridge {OBFS4_ADR2}
