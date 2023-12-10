@@ -22,8 +22,8 @@ Bridge {OBFS4_ADR3}
 Bridge {OBFS4_ADR4}
 UseBridges 1
 
-ExtORPort auto
-ORPort {OR_PORT}
+#ExtORPort auto
+#ORPort {OR_PORT}
 
 #Для исключения узлов Tor из стран РФ, Беларусь, Украина и Казахстан:
 ExcludeNodes {ru}, {by}, {ua}, {kz}
