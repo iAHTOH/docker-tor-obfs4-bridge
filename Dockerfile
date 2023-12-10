@@ -15,7 +15,7 @@ RUN apk add --no-cache tor && \
 #        less \
 #        man-db \
 #        tor-doc=$TOR_PACKAGE_VERSION
-#ENV PAGER=less
+#ENV PAGER=less 
 
 ENV OR_PORT=
 ENV PT_PORT="5090"
