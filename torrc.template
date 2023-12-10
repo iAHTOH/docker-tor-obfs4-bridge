@@ -23,6 +23,7 @@ Bridge {OBFS4_ADR3}
 Bridge {OBFS4_ADR4}
 UseBridges 1
 
+ExtORPort auto
 ORPort {OR_PORT}
 ServerTransportListenAddr obfs4 0.0.0.0:{PT_PORT}
 
