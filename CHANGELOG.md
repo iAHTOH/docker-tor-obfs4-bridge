@@ -5,6 +5,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Russian README translation.
+- Runtime support for up to 20 obfs4 bridge lines via `OBFS4_ADR1` through `OBFS4_ADR20`.
+- Optional `EXCLUDE_NODES`, `STRICT_NODES`, and `SOCKS_PORT_FLAGS` settings.
+
+### Changed
+- Fast-forwarded `dev` to the current `master` history.
+- Upgrade Alpine base image from edge to pinned Alpine 3.24.
+- Pin Tor package to 0.4.9.9-r0 and Lyrebird package to 0.8.1-r5.
+- Rework the container documentation as a Tor SOCKS proxy over obfs4 bridges.
+- Upgrade Docker GitHub Actions workflow dependencies.
+
+### Removed
+- Default hard-coded public obfs4 bridge addresses from the image.
 
 ## [1.1.0] - 2021-05-11
 ### Added
