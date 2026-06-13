@@ -1,9 +1,14 @@
-Log notice stdout
+# Используем obfs4 транспорт через lyrebird
+ClientTransportPlugin obfs4 exec /usr/bin/lyrebird
 
+# Используем только мосты
+UseBridges 1
+
+# SOCKS внутри контейнера
+SocksPort 127.0.0.1:9050
+
+# Каталог данных Tor
 DataDirectory /var/lib/tor
 
-SocksPolicy accept *
-SocksPort {SOCKS_LISTEN_ADDRESS}:{LISTEN_PORT} {SOCKS_PORT_FLAGS}
-
-ClientTransportPlugin obfs4 exec /usr/bin/lyrebird
-UseBridges 1
+# Безопасное логирование
+SafeLogging 1
